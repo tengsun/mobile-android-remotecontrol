@@ -64,20 +64,20 @@ public class RemoteControlFragment extends Fragment {
         TableRow bottomRow = (TableRow) tableLayout.getChildAt(tableLayout.getChildCount() - 1);
 
         Button delete = (Button) bottomRow.getChildAt(0);
-        delete.setText("Delete");
+        delete.setText(R.string.remote_control_delete);
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                workingTextView.setText("0");
+                workingTextView.setText(R.string.remote_control_zero);
             }
         });
 
         Button zero = (Button) bottomRow.getChildAt(1);
-        zero.setText("0");
+        zero.setText(R.string.remote_control_zero);
         zero.setOnClickListener(numberButtonListener);
 
         Button enter = (Button) bottomRow.getChildAt(2);
-        enter.setText("Enter");
+        enter.setText(R.string.remote_control_enter);
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +85,7 @@ public class RemoteControlFragment extends Fragment {
                 if (working.length() > 0) {
                     selectedTextView.setText(working);
                 }
-                workingTextView.setText("0");
+                workingTextView.setText(R.string.remote_control_zero);
             }
         });
 
