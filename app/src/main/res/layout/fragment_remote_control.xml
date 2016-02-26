@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remote_control_table"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="*">
@@ -25,26 +26,10 @@
         android:background="#555555"
         android:contextClickable="false"
         android:textColor="#cccccc"
-        android:layout_margin="10dp" />
+        android:layout_margin="5dp" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <Button
-            style="@style/RemoteButton"
-            android:text="0"
-            android:id="@+id/remote_control_zero" />
-
-        <Button
-            style="@style/RemoteButton"
-            android:text="1"
-            android:id="@+id/remote_control_one" />
-
-        <Button
-            style="@style/RemoteButton"
-            android:text="Enter"
-            android:id="@+id/remote_control_enter" />
-    </TableRow>
+    <include android:layout_weight="1" layout="@layout/button_row" />
+    <include android:layout_weight="1" layout="@layout/button_row" />
+    <include android:layout_weight="1" layout="@layout/button_row" />
+    <include android:layout_weight="1" layout="@layout/button_row" />
 </TableLayout>
