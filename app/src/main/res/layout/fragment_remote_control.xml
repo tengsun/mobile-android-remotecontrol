@@ -33,20 +33,17 @@
         android:layout_weight="1">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            style="@style/RemoteButton"
             android:text="0"
             android:id="@+id/remote_control_zero" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            style="@style/RemoteButton"
             android:text="1"
             android:id="@+id/remote_control_one" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            style="@style/RemoteButton"
             android:text="Enter"
             android:id="@+id/remote_control_enter" />
     </TableRow>
